@@ -10,7 +10,7 @@ namespace DigitalInovation.Net._2
         private string Titulo { get; set;}
         private string Descripcion {get; set;}
         private int Ano {get; set;}
-
+        private bool Excluido {get; set;}
         //Metodos
 
         public Serie(int id, Genero genero, string titulo, string descripcion, int ano)
@@ -20,6 +20,7 @@ namespace DigitalInovation.Net._2
             this.Titulo = Titulo;
             this.Descripcion = descripcion;
             this.Ano = ano;
+            this.Excluido = false;
         }
 
         //public Series()
@@ -32,7 +33,7 @@ namespace DigitalInovation.Net._2
             retorno += "Genero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descripcion: " + this.Descripcion + Environment.NewLine;
-            retorno += "Ano: " + this.Ano;
+            retorno += "Ano de inicio: " + this.Ano;
             return retorno;
         }
 
@@ -44,6 +45,10 @@ namespace DigitalInovation.Net._2
         public int retornaId()
         {
             return this.Id;
+        }
+        public void Excluir()
+        {
+        this.Excluido = true;
         }
     }
 }
