@@ -1,0 +1,16 @@
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\bin\Debug\net5.0\DigitalInovation.Net.2.exe
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\bin\Debug\net5.0\DigitalInovation.Net.2.deps.json
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\bin\Debug\net5.0\DigitalInovation.Net.2.runtimeconfig.json
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\bin\Debug\net5.0\DigitalInovation.Net.2.runtimeconfig.dev.json
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\bin\Debug\net5.0\DigitalInovation.Net.2.dll
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\bin\Debug\net5.0\ref\DigitalInovation.Net.2.dll
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\bin\Debug\net5.0\DigitalInovation.Net.2.pdb
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.csproj.AssemblyReference.cache
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.AssemblyInfoInputs.cache
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.AssemblyInfo.cs
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.csproj.CoreCompileInputs.cache
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.dll
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\ref\DigitalInovation.Net.2.dll
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.pdb
+C:\Users\WELLS\Desktop\DigitalInovation.Net.2\obj\Debug\net5.0\DigitalInovation.Net.2.genruntimeconfig.cache

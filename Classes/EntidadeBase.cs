@@ -1,6 +1,7 @@
-namespace DigitalInovation
+namespace DigitalInovation.Net._2
+{
     public abstract class EntidadeBase
     {
-        //public int Id(get; protect set;);
+        public int Id { get; protected set;}
     }
 }
