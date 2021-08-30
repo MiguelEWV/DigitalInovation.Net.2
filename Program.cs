@@ -69,9 +69,12 @@ namespace DigitalInovation.Net._2
 
            foreach (int i in Enum.GetValues(typeof(Genero)))
            {
+               Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
+           }
+           {
                Console.WriteLine("Escriba el genero de acuerdo a las opciones superiores: ");
                int entradaGenero = int.Parse(Console.ReadLine());
-
+           
                Console.WriteLine("Escriba el Titulo de la serie: ");
                string entradaTitulo = Console.ReadLine();
 
@@ -131,7 +134,7 @@ namespace DigitalInovation.Net._2
            foreach (var serie in lista)
            {
                var excluido = serie.retornaExcluido();
-               Console.WriteLine("#ID {0}: - Titulo: {1}- Ano: {2}- Excluido: {3}", serie.retornaId(), serie.retornaTitulo(), serie.retornaAno(), (excluido ? "*Excluido*" : ""));
+               Console.WriteLine("#ID {0}: - Titulo: {1}- Ano: {2}- Excluido: {3}", serie.retornaId(), serie.retornaTitulo(), serie.retornaAno(), (excluido ? "*Si*" : "No"));
            }
         }
 
