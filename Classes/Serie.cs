@@ -17,7 +17,7 @@ namespace DigitalInovation.Net._2
         {
             this.Id = id;
             this.Genero = genero;
-            this.Titulo = Titulo;
+            this.Titulo = titulo;
             this.Descripcion = descripcion;
             this.Ano = ano;
             this.Excluido = false;
@@ -33,7 +33,8 @@ namespace DigitalInovation.Net._2
             retorno += "Genero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descripcion: " + this.Descripcion + Environment.NewLine;
-            retorno += "Ano de inicio: " + this.Ano;
+            retorno += "Eliminado: " + this.Excluido + Environment.NewLine;
+            retorno += "Ano de inicio: " + this.Ano; 
             return retorno;
         }
 
@@ -41,10 +42,17 @@ namespace DigitalInovation.Net._2
         {
             return this.Titulo;
         }
-
         public int retornaId()
         {
             return this.Id;
+        }
+         public int retornaAno()
+        {
+            return this.Ano;
+        }
+         public bool retornaExcluido()
+        {
+            return this.Excluido;
         }
         public void Excluir()
         {

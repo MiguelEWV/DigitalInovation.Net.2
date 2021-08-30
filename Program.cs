@@ -14,31 +14,78 @@ namespace DigitalInovation.Net._2
                 switch (opcaoUsuario)
                 {
                     case "1":
-                        ListarSeries();
+                       ListarSeries();
                     break;
                     case "2":
                        InserirSerie();
                     break;
                     case "3":
-                       // ActualizarSerie();
+                       ActualizarSerie();
                     break;
                     case "4":
-                       // ExcluirSerie();
+                       ExcluirSerie();
                     break;
                     case "5":
-                       // VisualizarSerie();
+                       VisualizarSerie();
                     break;
-                    case "c":
+                    case "C":
                         Console.Clear();
                     break;
-
-                    default:
-                       throw new ArgumentOutOfRangeException();
+                    case "":
+                    Console.WriteLine();
+                    Console.WriteLine("===================================");
+                    Console.WriteLine("= Por favor seleccione una opcion =");
+                    Console.WriteLine("===================================");
+                    Console.WriteLine();
+                    break;
                 }
                 opcaoUsuario = ObterOpcaoUsuario();
             }
-            Console.WriteLine("Saliendo");
-             
+             Console.WriteLine("===========================================");
+             Console.WriteLine("| Saliendo del catalogo, nos vemos pronto |");
+             Console.WriteLine("===========================================");
+             Console.ReadLine();
+        }
+
+        private static void VisualizarSerie()
+        {
+            Console.WriteLine("Escriba el id de la serie: ");
+            int indiceSerie = int.Parse(Console.ReadLine());
+            var serie = repositorio.RetornaPorId(indiceSerie);
+            Console.WriteLine(serie);
+        }
+
+        private static void ExcluirSerie()
+        {
+            Console.WriteLine("Escriba el ID de la serie a ser excluida: ");
+            int indiceSerie = int.Parse(Console.ReadLine());
+            repositorio.Exclui(indiceSerie);
+        }
+
+        private static void ActualizarSerie()
+        {
+           Console.Write(" Escriba el identificador ID de la serie: ");
+           int indiceSerie = int.Parse(Console.ReadLine());
+
+           foreach (int i in Enum.GetValues(typeof(Genero)))
+           {
+               Console.WriteLine("Escriba el genero de acuerdo a las opciones superiores: ");
+               int entradaGenero = int.Parse(Console.ReadLine());
+
+               Console.WriteLine("Escriba el Titulo de la serie: ");
+               string entradaTitulo = Console.ReadLine();
+
+               Console.WriteLine("Escriba el ano de inicio de la serie: ");
+               int entradaAno = int.Parse(Console.ReadLine());
+
+               Console.WriteLine("Escriba la descripcion de la serie: ");
+               string entradaDescripcion = Console.ReadLine();
+
+               Serie atualizaSerie = new Serie(id: indiceSerie,genero: (Genero)entradaGenero,titulo: entradaTitulo,
+               ano: entradaAno,descripcion: entradaDescripcion);
+
+               repositorio.Atualiza(indiceSerie,atualizaSerie);
+           }
         }
 
         private static void InserirSerie()
@@ -83,7 +130,8 @@ namespace DigitalInovation.Net._2
            }
            foreach (var serie in lista)
            {
-               Console.WriteLine("#ID {0}: - {1}", serie.retornaId(), serie.retornaTitulo());
+               var excluido = serie.retornaExcluido();
+               Console.WriteLine("#ID {0}: - Titulo: {1}- Ano: {2}- Excluido: {3}", serie.retornaId(), serie.retornaTitulo(), serie.retornaAno(), (excluido ? "*Excluido*" : ""));
            }
         }
 
